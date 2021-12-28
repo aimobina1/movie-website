@@ -314,7 +314,7 @@ section{
 }
 
 @media (max-width:991px) {
-    .header{
+    #nav-sec{
         padding: 18px 4%;
     }
     section{
@@ -324,25 +324,22 @@ section{
         padding: 0 4%;
     }
     .home-text h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 @media (max-width:774px) {
-    .header{
-        padding: 12px 4%;
+    #nav-sec{
+        padding: 18px 6%;
     }
     #menu-icon{
         display: initial;
         color: var(--bg-color);
     }
-    #shadow #menu-icon{
-        color: var(--text-color);
-    }
     #navbar{
         position: absolute;
-        top: -570px;
-        right: 0;
+        top:-570px;
         left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         background-color: var(--bg-color);
@@ -354,17 +351,19 @@ section{
     }
     #navbar a{
         color: var(--text-color);
-        width: 100%;
     }
     #navbar a:hover{
         color: var(--main-color);
-        border-bottom: 2px solid var(--main-color);
+        border-bottom: solid 2px var(--main-color);
     }
     #navbar a::after{
         display: none;
-    }    
-    #navbar .active{
-        top: 100%;
+    }
+    #navbar.active{
+        top:100%;
+    }
+    .shadow #menu-icon{
+        color: var(--text-color);
     }
     .home-text h1{
         font-size: 2.4rem;
@@ -373,7 +372,7 @@ section{
         padding: 0.6rem 1.2rem;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit,minmax(160px , auto));
+        grid-template-columns:repeat(auto-fit,minmax(160px,auto));
     }
 }
 @media (max-width:474px) {
@@ -382,28 +381,34 @@ section{
     }
     .footer{
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         row-gap: 1rem;
     }    
 }
 @media (max-width:370px) {
-    .header{
-        padding: 6px 4%;
+    #nav-sec{
+        padding: 6px 7%;
     }
     .home-text h1{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     .play{
-        right:2rem;
+        right: 2rem;
         bottom: 8%;
     }
     .play .bx{
         padding: 7px;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit,minmax(140px , auto));
+        grid-template-columns:repeat(auto-fit,minmax(140px,auto));
     }
-    .box .box-img {
+    .newslatter form .email{
+        width:70%;
+    }
+    .box .box-img{
         height: 240px;
+    }
+    .newslatter h2{
+        font-size: 1rem;
     }
 }
