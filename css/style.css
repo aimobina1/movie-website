@@ -9,6 +9,15 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
 }
+/* coustome scroll bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--text-color);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 5rem;
+}
 /* some variables */
 :root{
     --main-color:#ff2c1f;
