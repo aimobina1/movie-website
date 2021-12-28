@@ -212,3 +212,44 @@ section{
 .coming-container .box{
     width: 100px;
 }
+/* news latter */
+.newslatter{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+.newslatter h2{
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.newslatter form{
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.newslatter form input{
+    border: none;
+    outline: none;
+}
+.newslatter form .email{
+    width: 280px;
+}
+.newslatter form input::placeholder{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.newslatter .btn{
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
