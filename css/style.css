@@ -384,6 +384,9 @@ section{
         align-items: center;
         row-gap: 1rem;
     }    
+    .home-text h1{
+        font-size: 1rem;
+    }
 }
 @media (max-width:370px) {
     #nav-sec{
