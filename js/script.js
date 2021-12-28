@@ -1,3 +1,8 @@
+let header = document.getElementById('nav-sec')
+
+window.addEventListener('scroll', () =>{
+  header.classList.toggle('shadow', window.scrollY > 0)
+} )
 // Initialize Swiper >
       var swiper = new Swiper(".home", {
         spaceBetween: 30,
@@ -13,7 +18,7 @@
         
       });
 
-// Initialize Swiper >
+// Initialize Swiper for comming movies >
 var swiper = new Swiper(".coming-container", {
     spaceBetween: 20,
     loop:true,
