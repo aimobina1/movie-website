@@ -304,3 +304,106 @@ section{
     text-align: center;
     color: var(--bg-color);
 }
+
+/* responsive */
+
+@media (max-width:1080px) {
+    .home-text{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:991px) {
+    .header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    .home-text{
+        padding: 0 4%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width:774px) {
+    .header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    #shadow #menu-icon{
+        color: var(--text-color);
+    }
+    #navbar{
+        position: absolute;
+        top: -570px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+    #navbar a{
+        color: var(--text-color);
+        width: 100%;
+    }
+    #navbar a:hover{
+        color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+    #navbar a::after{
+        display: none;
+    }    
+    #navbar .active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit,minmax(160px , auto));
+    }
+}
+@media (max-width:474px) {
+    .newslatter form .email{
+        width: auto;
+    }
+    .footer{
+        flex-direction: column;
+        align-items:center;
+        row-gap: 1rem;
+    }    
+}
+@media (max-width:370px) {
+    .header{
+        padding: 6px 4%;
+    }
+    .home-text h1{
+        font-size: 1.4rem;
+    }
+    .play{
+        right:2rem;
+        bottom: 8%;
+    }
+    .play .bx{
+        padding: 7px;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit,minmax(140px , auto));
+    }
+    .box .box-img {
+        height: 240px;
+    }
+}
